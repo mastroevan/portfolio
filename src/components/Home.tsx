@@ -31,7 +31,7 @@ const Home = () => {
           <br></br>
           <br></br>
           <br></br>
-          <p>&#169; 2024 Evan Mastro</p>
+          <p>&#169; 2025 Evan Mastro</p>
         </div>
       </section>
     );

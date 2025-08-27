@@ -7,31 +7,40 @@ const About = () => {
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
-          <p className="text-lg leading-relaxed">
-            I am a skilled Full Stack Software Engineer with over 4 years of
-            experience delivering high-performance, scalable web applications.
-            My expertise spans modern technologies like React, Node.js, and
-            Python, alongside a strong foundation in system design, RESTful API
-            development, and cloud deployments. At ANSOL, I developed innovative
-            applications for the defense sector, improving data integration and
-            automating processes. My work at Outlier.AI further solidified my
-            passion for leveraging AI and data-driven solutions to create
-            impactful user experiences.
-            <br></br>
-            <br></br>
-            <br></br>
-            Graduating from Hack Reactor’s immersive program deepened my
-            understanding of software development and honed my ability to
-            collaborate on complex, full-stack projects. Proficient in building
-            interactive dashboards, predictive analytics applications, and
-            scalable architectures, I am passionate about learning and
-            problem-solving in an ever-evolving tech landscape. Whether it’s
-            crafting user-friendly interfaces or designing robust back-end
-            systems, I thrive in bringing ideas to life through code. I’m eager
-            to connect and explore opportunities where I can contribute and grow
-            as a software developer.
+          <p className="text-lg leading-relaxed mb-6">
+            I’m a <strong>Full Stack Software Engineer</strong> with 4+ years of
+            experience designing and delivering scalable, user-focused web
+            applications. I work with modern technologies like{" "} <strong>React, Python, PostgreSQL, and cloud-native platforms</strong>, and I thrive on collaborating with teams to build impactful features and streamline workflows.
           </p>
-          <div className="flex flex-col items-end gap-4 mt-4">
+
+          <ul className="list-disc list-inside space-y-4 mb-6 text-lg leading-relaxed">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-700">Some career highlights:</h3>
+            <li>
+              <strong>High-Scale Microservices</strong> — Built a Q&A system
+              capable of handling 2,200 requests per second across 55M+ records.
+            </li>
+            <li>
+              <strong>Team Leadership</strong> — Guided engineers to deliver a
+              mission-critical web app that automated reporting on 30,000+ project
+              tasks, cutting manual analysis time by 70%.
+            </li>
+            <li>
+              <strong>SharePoint &amp; Power Platform Expertise</strong> — Designed
+              automation to export SharePoint lists into Excel for streamlined
+              reporting, built custom Power Apps (including an internal
+              reimbursement workflow), and modernized legacy systems by restoring
+              a critical Microsoft Access database.
+            </li>
+          </ul>
+
+          <p className="text-lg leading-relaxed">
+            I’m a graduate of the{" "}
+            <strong>Galvanize (Hack Reactor) Software Engineering Immersive</strong>,
+            and I’m passionate about using technology to solve real-world problems
+            and help teams work smarter.
+          </p>
+
+          <div className="flex flex-col items-end gap-4 mt-8">
             <a
               href="https://github.com/mastroevan"
               target="_blank"
@@ -65,7 +74,6 @@ const About = () => {
         </div>
 
         <div className="flex flex-col items-end justify-center gap-12">
-          {/* Image */}
           <img
             src={profileImage}
             alt="Evan Mastro"
@@ -74,7 +82,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default About;

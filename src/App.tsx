@@ -1,5 +1,4 @@
 import './App.css'
-import { Analytics } from '@vercel/analytics/next'
 import About from './components/About'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
@@ -27,7 +26,6 @@ function App() {
       <section id="contact" className='pt-20'>
         <Contact />
       </section>
-      <Analytics />
     </>
   )
 }

@@ -1,9 +1,15 @@
 import { Link } from "react-scroll";
-import Logo from "../assets/logo-png.png"
-;
+import Logo from "../assets/logo-png.png";
+import { motion } from "framer-motion";
+
 const Navbar = () => {
   return (
-    <nav className="bg-gradient-to-r from-blue-500 via-green-400 to-blue-600 fixed top-0 left-0 w-full z-50">
+    <motion.nav
+      className="bg-gradient-to-r from-blue-500 via-green-400 to-blue-600 fixed top-0 left-0 w-full z-50"
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+    >
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
         {/* Logo */}
         <div className="text-2xl font-bold text-blue-500">
@@ -69,7 +75,7 @@ const Navbar = () => {
           &#9776;
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

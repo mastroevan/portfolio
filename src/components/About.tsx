@@ -3,14 +3,22 @@ import profileImage from "../assets/profile.webp";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gray-100 text-gray-800">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
+    <section id="about" className="py-16 bg-white text-gray-800">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12">
+        <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
+          <img
+            src={profileImage}
+            alt="Evan Mastro"
+            className="w-full max-w-md h-auto rounded-lg shadow-2xl border-4 border-gray-300"
+          />
+        </div>
+        <div className="md:w-1/2">
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
           <p className="text-lg leading-relaxed mb-6">
             I’m a <strong>Full Stack Software Engineer</strong> with 4+ years of
             experience designing and delivering scalable, user-focused web
-            applications. I work with modern technologies like{" "} <strong>React, Python, PostgreSQL, and cloud-native platforms</strong>, and I thrive on collaborating with teams to build impactful features and streamline workflows.
+            applications. I work with modern technologies like{" "}
+            <strong>React, Python, PostgreSQL, and cloud-native platforms</strong>, and I thrive on collaborating with teams to build impactful features and streamline workflows.
           </p>
 
           <ul className="list-disc list-inside space-y-4 mb-6 text-lg leading-relaxed">
@@ -25,7 +33,7 @@ const About = () => {
               tasks, cutting manual analysis time by 70%.
             </li>
             <li>
-              <strong>SharePoint &amp; Power Platform Expertise</strong> — Designed
+              <strong>SharePoint & Power Platform Expertise</strong> — Designed
               automation to export SharePoint lists into Excel for streamlined
               reporting, built custom Power Apps (including an internal
               reimbursement workflow), and modernized legacy systems by restoring
@@ -39,46 +47,36 @@ const About = () => {
             and I’m passionate about using technology to solve real-world problems
             and help teams work smarter.
           </p>
-
-          <div className="flex flex-col items-end gap-4 mt-8">
+          <br />
+          <br />
+          <div className="flex justify-center gap-8 mt-8">
             <a
               href="https://github.com/mastroevan"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-2xl text-gray-700 hover:text-black transition-transform hover:scale-110"
+              className="flex items-center gap-2 text-2xl text-gray-700 hover:text-black transition-transform hover:scale-110"
             >
-              <FiGithub size={36} />
-              <span className="font-semibold">GitHub</span>
+              <FiGithub size={108} />
             </a>
 
             <a
               href="https://www.linkedin.com/in/mastroevan"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-2xl text-blue-700 hover:text-blue-500 transition-transform hover:scale-110"
+              className="flex items-center gap-2 text-2xl text-blue-700 hover:text-blue-500 transition-transform hover:scale-110"
             >
-              <FiLinkedin size={36} />
-              <span className="font-semibold">LinkedIn</span>
+              <FiLinkedin size={108} />
             </a>
 
             <a
               href="https://www.instagram.com/mastroevan"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-2xl text-pink-500 hover:text-pink-600 transition-transform hover:scale-110"
+              className="flex items-center gap-2 text-2xl text-pink-500 hover:text-pink-600 transition-transform hover:scale-110"
             >
-              <FiInstagram size={36} />
-              <span className="font-semibold">Instagram</span>
+              <FiInstagram size={108} />
             </a>
           </div>
-        </div>
-
-        <div className="flex flex-col items-end justify-center gap-12">
-          <img
-            src={profileImage}
-            alt="Evan Mastro"
-            className="rounded-lg shadow-lg w-65 h-auto"
-          />
         </div>
       </div>
     </section>
